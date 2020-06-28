@@ -1,0 +1,265 @@
+/* GitHub stylesheet from MarkdownPad (http://markdownpad.com) with some additions*/
+/* Orig author: Nicolas Hery - http://nicolashery.com */
+/* Orig version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Orig source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET ====================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY =====================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding-right: 20px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* BLOCKS ===================================================================*/
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+p {
+  white-space: pre-line;
+}
+
+/* HEADERS ==================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* LINKS ====================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #4183C4;
+}
+
+/* LISTS ====================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE =====================================================================*/
+
+pre {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+/* QUOTES ===================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #C07937;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES =========================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES ====================================================================*/
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+} 
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 0px solid #ccc;
+  padding: 6px 13px;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-top: 0px solid #ccc;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES ===================================================================*/
+
+img {
+  max-width: 100%;
+  margin: 0 10px 0 0;
+}
+
+/* NAVIGATION ===============================================================*/
+
+div.content {
+    float: left;
+    width: 70%;
+}
+
+div.nav {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-right: 20px;
+    background-color: #07070707;
+}
+
+div.nref_book {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+div.nref_h1 {
+    margin-left: 10px;
+    padding-left: 1.0em;
+    text-indent: -1.0em;
+}
+
+div.nref_h2 {
+    font-size: 90%;
+    margin-left: 20px;
+    padding-left: 1.0em;
+    text-indent: -1.0em;
+}
+
+div.nref_h3 {
+    font-size: 80%;
+    margin-left: 30px;
+    padding-left: 1.0em;
+    text-indent: -1.0em;
+}
+
+div.ncur_page {
+    font-weight: bold;
+    background-color: #11111111;
+}
